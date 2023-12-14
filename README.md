@@ -24,3 +24,7 @@ To start the Phoenix app:
   ### Creates order and applies a full payment
 
   `OrderManagement.Orders.create_order_and_pay(%{email: "igor.taskovski@gmail.com", price: Money.new(79_99)})`
+
+# Tests
+
+  * Run the tests with `mix test`
