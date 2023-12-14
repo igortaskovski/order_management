@@ -64,3 +64,16 @@ config :phoenix, :json_library, Jason
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{config_env()}.exs"
+
+config :money,
+  default_currency: :USD,
+  separator: ".",
+  delimiter: ",",
+  symbol: false,
+  symbol_on_right: false,
+  symbol_space: false,
+  fractional_unit: true,
+  strip_insignificant_zeros: false,
+  code: false,
+  minus_sign_first: true,
+  strip_insignificant_fractional_unit: false
