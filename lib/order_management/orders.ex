@@ -99,8 +99,7 @@ defmodule OrderManagement.Orders do
                 |> Repo.insert()
               # Update the order's balance_due to 0
               update_order_balance_due(order.id, 0)
-
-              {:ok, order}
+              order
 
             _ ->
               # If capture fails, roll back the transaction
